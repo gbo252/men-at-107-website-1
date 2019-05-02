@@ -168,6 +168,25 @@
   </footer>
 </body>
 
-<script> </script>
+<script> 
+
+  const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+  let currentDate = new Date();
+  let currentDayIndex = currentDate.getDay() - 1;
+  let currentDay = days[currentDayIndex];
+
+  let weekdayArr = [];
+  const weekdays = document.querySelectorAll('.weekday');
+
+  for (let i = 0; i < 7; i++) {
+    weekdayArr.push(weekdays[i]);
+    if (weekdayArr[i].innerHTML === currentDay) {
+      weekdayArr[i].style.fontWeight = "700";
+      weekdayArr[i].nextElementSibling.style.fontWeight = "700";
+    }
+  }
+
+</script>
 
 </html>
