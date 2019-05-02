@@ -6,20 +6,22 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134517806-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-134517806-1');
   </script>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8" />
   <link href="./style.css" type="text/css" rel="stylesheet">
   <link rel="shortcut icon" href="Images/Logo.png" type="image/png">
   <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120-precomposed.png" />
   <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png" />
-  <link rel="canonical" href="https://www.menat107.co.uk/contact"/>
+  <link rel="canonical" href="https://www.menat107.co.uk/contact" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Men @ 107 contact page includes information on opening hours, address, a map and email/phone details, including a contact form to get in touch.">
-  <meta name="keywords" content="Mens Gifts,Gifts,Men,Gift,Gifts for Him,Gifts for Men,Muswell Hill,London,Gift Shop,Gift Store,Gift Ideas,Mens Gift Ideas,Mens Accessories,Mens Fashion,Mens Style">
+  <meta name="description"
+    content="Men @ 107 contact page includes information on opening hours, address, a map and email/phone details, including a contact form to get in touch.">
+  <meta name="keywords"
+    content="Mens Gifts,Gifts,Men,Gift,Gifts for Him,Gifts for Men,Muswell Hill,London,Gift Shop,Gift Store,Gift Ideas,Mens Gift Ideas,Mens Accessories,Mens Fashion,Mens Style">
   <title>Men @ 107 | Contact Us | Men's Gifts</title>
 </head>
 
@@ -28,9 +30,9 @@
     <label for="toggle">
       <div id="navButton">
         <div id="navButtonBorder">
-          <hr/>
-          <hr/>
-          <hr/>
+          <hr />
+          <hr />
+          <hr />
         </div>
       </div>
     </label>
@@ -45,14 +47,17 @@
     </nav>
 
     <div id="socials">
-      <a href="https://www.instagram.com/menat107/" target="_blank"><img class="socialLogo" src="Images/instagram.png" alt="Instagram Logo"></a>
-      <a href="https://www.linkedin.com/company/menat107/" target="_blank"><img class="socialLogo" src="Images/linkedin.png" alt="LinkedIn Logo"></a>
-      <a href="https://www.facebook.com/menat107/" target="_blank"><img class="socialLogo" src="Images/facebook.png" alt="Facebook Logo"></a>
+      <a href="https://www.instagram.com/menat107/" target="_blank"><img class="socialLogo" src="Images/instagram.png"
+          alt="Instagram Logo"></a>
+      <a href="https://www.linkedin.com/company/menat107/" target="_blank"><img class="socialLogo"
+          src="Images/linkedin.png" alt="LinkedIn Logo"></a>
+      <a href="https://www.facebook.com/menat107/" target="_blank"><img class="socialLogo" src="Images/facebook.png"
+          alt="Facebook Logo"></a>
     </div>
 
     <div id="mainTitle">
       <h1>CONTACT US</h1>
-      <hr id="mainTitleLine"/>
+      <hr id="mainTitleLine" />
     </div>
   </header>
 
@@ -99,11 +104,13 @@
         </div>
       </div>
 
-      <hr class="contactDivider"/>
+      <hr class="contactDivider" />
 
       <div id="contact2">
         <div id="contactImage2" class="imageBorder">
-          <iframe title="Google map of shop" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d309.84876468618177!2d-0.14728188680285917!3d51.59040990670313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b28b95b832f%3A0x236ae4699e8e3206!2sMen+%40+107!5e0!3m2!1sen!2suk!4v1546709283542" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe title="Google map of shop"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d309.84876468618177!2d-0.14728188680285917!3d51.59040990670313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b28b95b832f%3A0x236ae4699e8e3206!2sMen+%40+107!5e0!3m2!1sen!2suk!4v1546709283542"
+            frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div id="findUs">
           <h2>How to Find Us</h2>
@@ -119,7 +126,7 @@
         </div>
       </div>
 
-      <hr class="contactDivider"/>
+      <hr class="contactDivider" />
 
       <div id="contact3">
         <div id="getTouch">
@@ -140,7 +147,7 @@
           <div id="contactDetails2">
             <p>email</p>
             <p>info@menat107.co.uk</p>
-            <br/>
+            <br />
             <p>phone</p>
             <p>020 8444 8004</p>
           </div>
@@ -168,25 +175,48 @@
   </footer>
 </body>
 
-<script> 
+<script>
+  //babel conversion
 
-  const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+  "use strict";
 
-  let currentDate = new Date();
-  let currentDayIndex = currentDate.getDay() - 1;
-  let currentDay = days[currentDayIndex];
+  var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
-  let weekdayArr = [];
-  const weekdays = document.querySelectorAll('.weekday');
+  var currentDate = new Date();
+  var currentDayIndex = currentDate.getDay() - 1;
+  var currentDay = days[currentDayIndex];
 
-  for (let i = 0; i < 7; i++) {
+  var weekdayArr = [];
+  var weekdays = document.querySelectorAll('.weekday');
+
+  for (var i = 0; i < 7; i++) {
     weekdayArr.push(weekdays[i]);
+
     if (weekdayArr[i].innerHTML === currentDay) {
       weekdayArr[i].style.fontWeight = "700";
       weekdayArr[i].nextElementSibling.style.fontWeight = "700";
     }
   }
 
+
+  /*
+    const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+    let currentDate = new Date();
+    let currentDayIndex = currentDate.getDay() - 1;
+    let currentDay = days[currentDayIndex];
+
+    let weekdayArr = [];
+    const weekdays = document.querySelectorAll('.weekday');
+
+    for (let i = 0; i < 7; i++) {
+      weekdayArr.push(weekdays[i]);
+      if (weekdayArr[i].innerHTML === currentDay) {
+        weekdayArr[i].style.fontWeight = "700";
+        weekdayArr[i].nextElementSibling.style.fontWeight = "700";
+      }
+    }
+  */
 </script>
 
 </html>
