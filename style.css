@@ -422,12 +422,17 @@ nav p a:link {
 #slideshow > div {
   height: 200px;
   width: 6000px;
-  background: url("Images/Slideshow.jpg");
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   transform: translate3d(0, 0, 0);
+}
+
+.instaPics {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
 
 #slideshowImages {
@@ -1387,7 +1392,12 @@ form .submit {
   #slideshow > div {
     height: 150px;
     width: 4500px;
-    background: url("Images/SlideshowSmall.jpg");
+  }
+
+  .instaPics {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
   }
 
   #slideshowImages {
