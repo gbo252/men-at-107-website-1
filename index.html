@@ -108,79 +108,58 @@
 
 <script>
 
+  // Babel Converted
 
+  "use strict";
 
-  // Babel converted!
-  
-    "use strict";
+  var instaEndpoint = "https://api.instagram.com/v1/users/self/media/recent/?access_token=9063853347.f61647e.c75a313ba6844cd78eb2ef414102923a";
+  var srcArr = [];
+  var instaArr = [];
 
-    var accessToken = "9063853347.f61647e.c75a313ba6844cd78eb2ef414102923a";
-    var instaEndpoint = "https://api.instagram.com/v1/users/self/media/recent/?access_token=";
+  var addSrcs = function addSrcs() {
+    var instaPic = document.querySelectorAll('.instaPics');
 
-    var getInstaPosts = async function getInstaPosts() {
-      try {
-        var response = await fetch(instaEndpoint + accessToken);
+    for (var i = 0; i < 20; i++) {
+      instaArr.push(instaPic[i]);
+      instaArr[i].src = srcArr[i];
+    }
 
-        if (response.ok) {
-          var jsonResponse = await response.json();
-          return jsonResponse.data;
-        }
+    for (var _i = 20; _i < 30; _i++) {
+      instaArr.push(instaPic[_i]);
+      instaArr[_i].src = srcArr[_i - 20];
+    }
+  };
 
-        throw new Error('Request failed!');
-      } catch (error) {
-        console.log(error);
+  var createSrcArr = function createSrcArr(data) {
+    data.forEach(function (post) {
+      srcArr.push(post.images.standard_resolution.url);
+    });
+    addSrcs();
+  };
+
+  var getInstaPosts = function getInstaPosts() {
+    var xhr = new XMLHttpRequest();
+    xhr.responseType = 'json';
+
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === XMLHttpRequest.DONE) {
+        return createSrcArr(xhr.response.data);
       }
     };
 
-    var srcArr = [];
-    var instaArr = [];
-    getInstaPosts().then(function (data) {
-      data.forEach(function (post) {
-        srcArr.push(post.images.standard_resolution.url);
-      });
-    }).then(function () {
-      var instaPic = document.querySelectorAll('.instaPics');
+    xhr.open('GET', instaEndpoint);
+    xhr.send();
+  };
 
-      for (var i = 0; i < 20; i++) {
-        instaArr.push(instaPic[i]);
-        instaArr[i].src = srcArr[i];
-      }
-
-      for (var _i = 20; _i < 30; _i++) {
-        instaArr.push(instaPic[_i]);
-        instaArr[_i].src = srcArr[_i - 20];
-      }
-    });
-  
-
-
+  getInstaPosts();
 
 
   /*
-    const accessToken = "9063853347.f61647e.c75a313ba6844cd78eb2ef414102923a";
-    const instaEndpoint = "https://api.instagram.com/v1/users/self/media/recent/?access_token=";
-
-    const getInstaPosts = async () => {
-      try {
-        const response = await fetch(instaEndpoint + accessToken);
-        if (response.ok) {
-          const jsonResponse = await response.json();
-          return jsonResponse.data;
-        }
-        throw new Error('Request failed!');
-      } catch (error) {
-        console.log(error);
-      }
-    }
-
+    const instaEndpoint = "https://api.instagram.com/v1/users/self/media/recent/?access_token=9063853347.f61647e.c75a313ba6844cd78eb2ef414102923a";
     let srcArr = [];
     let instaArr = [];
 
-    getInstaPosts().then(data => {
-      data.forEach(post => {
-        srcArr.push(post.images.standard_resolution.url);
-      });
-    }).then(function () {
+    const addSrcs = () => {
       const instaPic = document.querySelectorAll('.instaPics');
       for (let i = 0; i < 20; i++) {
         instaArr.push(instaPic[i]);
@@ -190,10 +169,29 @@
         instaArr.push(instaPic[i]);
         instaArr[i].src = srcArr[i - 20];
       }
-    });
+    }
+
+    const createSrcArr = (data) => {
+      data.forEach(post => {
+        srcArr.push(post.images.standard_resolution.url);
+      });
+      addSrcs();
+    }
+
+    const getInstaPosts = () => {
+      const xhr = new XMLHttpRequest();
+      xhr.responseType = 'json';
+      xhr.onreadystatechange = () => {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          return createSrcArr(xhr.response.data);
+        }
+      }
+      xhr.open('GET', instaEndpoint);
+      xhr.send();
+    }
+
+    getInstaPosts();
   */
-
-
 
 </script>
 
