@@ -1,0 +1,234 @@
+#homeBody {
+    background-image: url(../Images/100.png);
+    background-position: center;
+}
+
+#pageGradientHome {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - (30px));
+    z-index: -5;
+    margin-top: 30px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.4) 70%, rgba(255, 255, 255, 0) 100%);
+}
+
+#homePageMain {
+    position: relative;
+    max-width: 100%;
+    top: 30px;
+}
+
+#logo {
+    width: 550px;
+    max-width: 550px;
+    margin-bottom: -10px;
+    border-bottom: 1px solid black;
+}
+
+#homePageMain h1 {
+    display: block;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    font-size: 2px;
+    margin-top: 0px;
+}
+
+#sloganP1 {
+    font-size: 40px;
+    font-weight: 300;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+#sloganP2 {
+    font-size: 33px;
+    font-style: italic;
+    font-weight: 300;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+#slideshowContainer {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slideshow {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 200px;
+    width: 2000px;
+    transform: translate3d(0, 0, 0);
+}
+
+#slideshow>div {
+    height: 200px;
+    width: 6000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+}
+
+.instaPics {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+#slideshowImages {
+    animation: slideshow 60s linear infinite;
+}
+
+@keyframes slideshow {
+    100% {
+        transform: translateX(-66.6666%);
+    }
+}
+
+#textContainer {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+#textContainer2 {
+    display: none;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+#textContainer h3 {
+    margin: 0 auto;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 31px;
+}
+
+.visitUs {
+    padding-top: 18px;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1400px) {
+    #logo {
+        width: 39%;
+    }
+}
+
+@media only screen and (max-width: 1099px) {
+    #logo {
+        width: 430px;
+    }
+}
+
+@media only screen and (max-width: 982px) {
+    #textContainer h3 {
+        font-size: 20px;
+        line-height: 27px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #pageGradientHome {
+        height: calc(100% - (25px));
+        margin-top: 25px;
+    }
+    #homePageMain {
+        top: 25px;
+    }
+    #logo {
+        width: 55%;
+    }
+    #sloganP1 {
+        font-size: 35px;
+    }
+    #sloganP2 {
+        font-size: 28px;
+    }
+    #textContainer {
+        display: none;
+    }
+    #textContainer2 {
+        display: block;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    #textContainer2 h3 {
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        line-height: 27px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    #pageGradientHome {
+        height: calc(100% + (20px));
+        margin-top: 15px;
+    }
+    #homePageMain {
+        top: 65px;
+    }
+    #logo {
+        width: 300px;
+        padding-bottom: 10px;
+    }
+    #sloganP1 {
+        font-size: 30px;
+    }
+    #sloganP2 {
+        font-size: 23px;
+    }
+    #textContainer2 h3 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    #slideshow {
+        height: 150px;
+        width: 1500px;
+    }
+    #slideshow>div {
+        height: 150px;
+        width: 4500px;
+    }
+    .instaPics {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+    #slideshowImages {
+        animation: slideshow 60s linear infinite;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #pageGradientHome {
+        height: calc(100% + (30px));
+        margin-top: 10px;
+    }
+    #homePageMain {
+        top: 75px;
+    }
+    #logo {
+        width: 85%;
+    }
+    #textContainer2 h3 {
+        font-size: 16px;
+        line-height: 23px;
+    }
+}
+
+@media only screen and (max-width: 265px) {
+    #textContainer2 h3 {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}

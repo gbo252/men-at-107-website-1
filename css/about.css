@@ -1,0 +1,112 @@
+#aboutBody {
+    background-image: url(../Images/101.png);
+    background-position: bottom;
+}
+
+#aboutPageMain {
+    max-width: 780px;
+    margin: 50px 20% 30px 20%;
+}
+
+#aboutImage {
+    float: right;
+    width: 40%;
+    margin: 0px 0px 30px 35px;
+}
+
+#aboutImage img {
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+
+#aboutText p {
+    margin-right: 30px;
+    margin-left: 30px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.1;
+}
+
+.aboutBigText {
+    font-size: 26px;
+    line-height: 1.1;
+}
+
+#aboutPara2 {
+    margin-top: 30px;
+}
+
+#aboutFooter {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1099px) {
+    #aboutPageMain {
+        margin: 50px 12% 30px 12%;
+    }
+    #aboutImage {
+        margin: 0px 35px 30px 35px;
+    }
+}
+
+@media only screen and (max-width: 982px) {
+    #aboutText p {
+        font-size: 16px;
+    }
+    .aboutBigText {
+        font-size: 24px;
+    }
+    #aboutPageMain {
+        margin: 50px 10% 30px 10%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #aboutPageMain {
+        margin: 50px 8% 30px 8%;
+    }
+    #aboutText p {
+        font-size: 14px;
+    }
+    .aboutBigText {
+        font-size: 22px;
+    }
+    #aboutImage {
+        margin: 0px 40px 15px 15px;
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    #aboutPageMain {
+        margin: 50px 5% 30px 5%;
+    }
+    #aboutText p {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .aboutBigText {
+        font-size: 20px;
+    }
+    #aboutImage {
+        margin: 0px 15px 15px 15px;
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #aboutImage {
+        float: none;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    #aboutText p {
+        text-align: justify;
+    }
+}

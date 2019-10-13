@@ -1,0 +1,347 @@
+#contactBody {
+    background-image: url(../Images/103.png);
+}
+
+#contactPageMain {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    position: relative;
+    max-width: 1230px;
+    margin: 0 15%;
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.1;
+    font-weight: 300;
+}
+
+#contactPageMain h2 {
+    font-size: 28px;
+}
+
+#contactImage1, #contactImage2, #contactImage3 {
+    margin: 16px;
+}
+
+#contactImage1 img, #contactImage2 iframe, #contactImage3 {
+    width: 300px;
+    height: 380px;
+}
+
+.miniContactLogos {
+    width: 37px;
+    margin: 12px 0;
+}
+
+#contactPageMain table {
+    margin: 0 auto;
+}
+
+#openingHours, #findUs, #getTouch {
+    margin-top: 30px;
+    width: 400px;
+}
+
+#contactFooter {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.contactDivider {
+    display: none;
+}
+
+/* Contact1 */
+
+#contact1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    flex-basis: 1000px;
+    margin-bottom: 30px;
+}
+
+.weekday {
+    padding-right: 20px;
+    padding-bottom: 1px;
+}
+
+/* Contact2 */
+
+#contact2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap-reverse;
+    flex-basis: 1000px;
+    margin-bottom: 30px;
+}
+
+#address {
+    margin-bottom: 18px;
+}
+
+#tube {
+    width: 340px;
+    margin: 0 auto;
+}
+
+/* Contact3 */
+
+#contact3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    flex-basis: 1000px;
+    margin-bottom: 30px;
+}
+
+#contactDetails2 {
+    display: none;
+}
+
+.column1 {
+    text-align: right;
+    padding-right: 15px;
+    padding-bottom: 7px;
+}
+
+.column2 {
+    text-align: left;
+}
+
+#formInstructions {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 12px;
+}
+
+#contactImage3 {
+    background: rgba(247, 247, 247, 0.8);
+    background-clip: padding-box;
+}
+
+.formEntry {
+    width: 85%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+input {
+    height: 30px;
+}
+
+form .submit {
+    font-size: 20px;
+    font-weight: 700;
+    width: 80%;
+    height: 50px;
+    margin-top: 10px;
+    padding: 10px 10px;
+    letter-spacing: 0.1em;
+    border: 2px outset white;
+    border-color: white #DCDCDC #DCDCDC white;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.1) 100%);
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1800px) {
+    #contactPageMain {
+        flex-wrap: wrap;
+        top: 30px;
+        margin: 0 10%;
+    }
+    #openingHours, #findUs, #getTouch {
+        margin: 0 10px;
+    }
+    #contact2 {
+        transform: translateX(35px)
+    }
+    .weekday {
+        padding-bottom: 4px;
+    }
+    #contactFooter {
+        margin-top: 50px;
+    }
+    .miniContactLogos {
+        margin: 17px 0;
+    }
+}
+
+@media only screen and (max-width: 1099px) {
+    #openingHours, #findUs, #getTouch {
+        width: 370px;
+    }
+    #contact2 {
+        transform: translateX(0px)
+    }
+}
+
+@media only screen and (max-width: 982px) {
+    #contactPageMain {
+        top: 20px;
+    }
+    #openingHours, #findUs, #getTouch {
+        margin: 30px 10px 10px 10px;
+    }
+    #contactFooter {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .contactDivider {
+        display: block;
+        width: 430px;
+        height: 1px;
+        margin: 0 auto;
+        margin-top: 10px;
+        background-color: black;
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .contactDivider {
+        width: 330px;
+        margin-top: 10px;
+    }
+    #contactPageMain {
+        top: 10px;
+        font-size: 17px;
+    }
+    #contact1, #contact2, #contact3 {
+        margin-bottom: 15px;
+    }
+    #contactPageMain h2 {
+        font-size: 27px;
+    }
+    #openingHours, #findUs, #getTouch {
+        width: 325px;
+    }
+    #tube, #formInstructions {
+        width: 275px;
+    }
+    .formEntry {
+        font-size: 17px;
+    }
+    form .submit {
+        font-size: 19px;
+    }
+    .miniContactLogos {
+        margin: 12px auto;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .contactDivider {
+        width: 250px;
+        margin-top: 25px;
+    }
+    #contactDetails {
+        display: none;
+    }
+    #contactDetails2 {
+        display: block;
+    }
+    #contact1, #contact2, #contact3 {
+        margin-bottom: 0px;
+    }
+    #contactPageMain {
+        top: 0px;
+        font-size: 15px;
+    }
+    #contactPageMain h2 {
+        font-size: 25px;
+    }
+    #openingHours, #findUs, #getTouch {
+        width: 240px;
+    }
+    #tube, #formInstructions {
+        width: 240px;
+    }
+    #contactImage1 img {
+        width: 215px;
+        height: 274px;
+    }
+    #contactImage2 iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    #contactImage2 {
+        width: 215px;
+        height: 300px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        resize: both;
+    }
+    #contactImage3 {
+        width: 215px;
+        height: 350px;
+    }
+    .formEntry {
+        font-size: 15px;
+    }
+    form .submit {
+        font-size: 17px;
+    }
+    .miniContactLogos {
+        width: 30px;
+    }
+}
+
+@media only screen and (max-width: 265px) {
+    #contactPageMain {
+        font-size: 12px;
+    }
+    #contactPageMain h2 {
+        font-size: 22px;
+    }
+    #openingHours, #findUs, #getTouch {
+        width: 175px;
+    }
+    #tube, #formInstructions {
+        width: 175px;
+    }
+    .weekday {
+        padding-right: 5px;
+    }
+    #contactImage1 img {
+        width: 160px;
+        height: 204px;
+    }
+    #contactImage2 {
+        width: 160px;
+        height: 250px;
+    }
+    #contactImage3 {
+        width: 160px;
+        height: 320px;
+    }
+    .contactDivider {
+        width: 150px;
+    }
+    .formEntry {
+        font-size: 12px;
+    }
+    form .submit {
+        font-size: 14px;
+        white-space: normal;
+        height: 60px;
+    }
+}
