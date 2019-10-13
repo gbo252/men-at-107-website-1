@@ -182,10 +182,10 @@
 
   "use strict";
 
-  var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-
+  var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  
   var currentDate = new Date();
-  var currentDayIndex = currentDate.getDay() - 1;
+  var currentDayIndex = currentDate.getDay();
   var currentDay = days[currentDayIndex];
 
   var weekdayArr = [];
@@ -202,10 +202,10 @@
 
 
   /*
-    const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
     let currentDate = new Date();
-    let currentDayIndex = currentDate.getDay() - 1;
+    let currentDayIndex = currentDate.getDay();
     let currentDay = days[currentDayIndex];
 
     let weekdayArr = [];

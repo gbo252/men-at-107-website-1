@@ -94,13 +94,13 @@
 
 #textContainer {
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 #textContainer2 {
     display: none;
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 #textContainer h3 {
@@ -114,6 +114,21 @@
 .visitUs {
     padding-top: 18px;
 }
+
+.video {
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.video iframe {
+    width: 900px;
+    height: 506px;
+}
+
+.videoBorder {
+    font-size: 0px;
+    border: 3px inset white;
+  }
 
 /* MEDIA QUERIES */
 
@@ -133,6 +148,17 @@
     #textContainer h3 {
         font-size: 20px;
         line-height: 27px;
+    }
+    .video iframe {
+        width: 99%;
+        height: 99%;
+    }
+    .video {
+        width: 680px;
+        height: 383px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        resize: both;
     }
 }
 
@@ -166,6 +192,10 @@
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
         line-height: 27px;
+    }
+    .video {
+        width: 500px;
+        height: 281px;
     }
 }
 
@@ -207,6 +237,10 @@
     #slideshowImages {
         animation: slideshow 60s linear infinite;
     }
+    .video {
+        width: 300px;
+        height: 169px;
+    }
 }
 
 @media only screen and (max-width: 360px) {
@@ -224,11 +258,19 @@
         font-size: 16px;
         line-height: 23px;
     }
+    .video {
+        width: 210px;
+        height: 118px;
+    }
 }
 
 @media only screen and (max-width: 265px) {
     #textContainer2 h3 {
         font-size: 14px;
         line-height: 21px;
+    }
+    .video {
+        width: 180px;
+        height: 101px;
     }
 }

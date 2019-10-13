@@ -18,6 +18,28 @@ var context = {
       infoAlt3: 'Cross-Body bag lying on table',
       infoText: "We have a great selection of bags in various leathers, colours and prices in canvas and leather combinations. Whether you are looking for something to take to work or just to ‘throw on your back’ for holidays, we have it covered. We also offer protection sprays and creams made in France to care for your purchases, ensuring they still look great in years to come."
     }, {
+      squareName: 'Barbour<br/>Accessories',
+      infoName: 'Barbour Accessories',
+      squarePic: 'Barbour-Scarf.jpg',
+      squareAlt: 'Man with tartan Barbour scarf',
+      infoPic1: 'Barbour-Accs.jpg',
+      infoAlt1: 'Barbour bag, scarf and two hats',
+      infoPic2: 'Barbour-Scarf.jpg',
+      infoAlt2: 'Man with tartan Barbour scarf',
+      infoPic3: 'Barbour-Tartan.jpg',
+      infoAlt3: 'Barbour accessories',
+      infoText: "Come and discover how many accessories the British brand Barbour has to offer. The Barbour story began in 1894 and remains true to its core values today, offering beautiful function and well priced stylish accessories. These include scarves, gloves, hats, backpacks, laptop and cross-body bags, wallets and card holders, belts, handkerchiefs, hip and thermos flasks, travel mugs, umbrellas and shoe cleaning sets."
+    }, {
+      squareName: 'Leather<br/>Jackets',
+      infoName: 'Leather Jackets',
+      squarePic: 'Jackets-Rack.jpg',
+      squareAlt: 'Leather jackets on clothes rack',
+      infoPic1: 'Jackets-Rack.jpg',
+      infoAlt1: 'Leather jackets on clothes rack',
+      infoPic2: 'Jackets-Plant.jpg',
+      infoAlt2: 'Black leather jacket hanging in front of plant',
+      infoText: "Soft leather jackets are now available at Men @ 107. Colours include black, brown, navy and cognac leathers. Our men’s leather jackets are ideal as a jacket or short coat for smart to casual outings. With so much potential wear, our jackets are designed with durability and style in mind. Fit and functionality are crafted into every leather jacket and are available in sizes small, medium, large, extra large and XXL."
+    }, {
       squareName: 'Briefcases,<br/>Holdalls<br/>& Suit-Packs',
       infoName: 'Briefcases, Holdalls & Suit-Packs',
       squarePic: 'Cases-Holdall.jpg',
@@ -86,7 +108,7 @@ var context = {
       infoAlt2: 'Man with a blue striped scarf around his neck',
       infoPic3: 'Winter-Hat.jpg',
       infoAlt3: 'Blue hat',
-      infoText: "Our scarf ranges include stripes, dots and checks in unusual colour combinations and materials. They feel exceptionally soft and many are double-sided, creating both unusual and versatile combinations to wear with many outfits. Gloves are made from soft leather, suedes and fabrics in black, brown, tan and navy, all available in four sizes. Caps are made in Harris Tweed and a selection of other fabrics, in multiple colours and sizes. We also have Baseball Caps in various colours, together with great summer trilby hats in denim blues, beiges, browns and khaki."
+      infoText: "Our scarf ranges include stripes, dots and checks in unusual colour combinations and materials. They feel exceptionally soft and many are double-sided, creating both unusual and versatile combinations to wear with many outfits. Gloves are made from soft leather, suedes and fabrics in black, brown, tan and navy, all available in four sizes. Caps are made in Harris Tweed and a selection of other fabrics, in multiple colours and sizes. We also have beanies and caps in various colours, together with some great ‘headwear’ including 100% wool felt trilby and pork pie hats and a large variety of caps in an assortment of materials and colours."
     }, {
       squareName: 'Socks',
       infoName: 'Socks',
