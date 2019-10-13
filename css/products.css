@@ -140,6 +140,9 @@
 }
 
 @media only screen and (max-width: 982px) {
+    #productsBody {
+        background-image: url(../images/102c.jpg);
+    }    
     #productsPageMain {
         margin: 10px 11% 30px 11%;
     }

@@ -55,6 +55,9 @@
 }
 
 @media only screen and (max-width: 982px) {
+    #aboutBody {
+        background-image: url(../images/101c.jpg);
+    }
     #aboutText p {
         font-size: 16px;
     }

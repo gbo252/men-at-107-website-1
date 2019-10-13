@@ -192,6 +192,9 @@ form .submit {
 }
 
 @media only screen and (max-width: 982px) {
+    #contactBody {
+        background-image: url(../images/103c.jpg);
+    }
     #contactPageMain {
         top: 20px;
     }
