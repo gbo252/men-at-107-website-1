@@ -73,7 +73,7 @@
           <table>
             <tr>
               <td class="weekday">Monday</td>
-              <td>CLOSED</td>
+              <td>10:00 - 17:30</td>
             </tr>
             <tr>
               <td class="weekday">Tuesday</td>
@@ -159,13 +159,15 @@
         </div>
         <div id="contactImage3" class="imageBorder">
           <form method="post" action="contact-form.php">
-            <input name="name" type="text" class="formEntry" placeholder="Name" required>
-            <br>
-            <input name="email" type="email" class="formEntry" placeholder="Email" required>
-            <br>
+            <input name="name" type="text" class="formEntry" placeholder="Name" required />
+            <br />
+            <input name="email" type="email" class="formEntry" placeholder="Email" required />
+            <br />
+            <input name="website" type="text" id="website" autocomplete="off" />
+            <br />
             <textarea name="message" class="formEntry" placeholder="Message" rows="6" required></textarea>
-            <br>
-            <input type="submit" class="formEntry submit" value="SEND MESSAGE">
+            <br />
+            <input type="submit" class="formEntry submit" value="SEND MESSAGE" />
           </form>
         </div>
       </div>
