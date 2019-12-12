@@ -19,8 +19,8 @@ The website has 4 pages
 * Contact
 
 ## Screenshots
-![Home page](./images/screenshot_home.jpg)
-![Contact page](./images/screenshot_contact.jpg)
+![Home page](./Images/screenshot_home.jpg)
+![Contact page](./Images/screenshot_contact.jpg)
 
 ## Built With
 * HTML
