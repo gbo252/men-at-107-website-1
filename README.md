@@ -26,6 +26,7 @@ The website has 4 pages
 * HTML
 * CSS
 * JavaScript
+* PHP
 * Handlebars - 4.1.2
 
 ## Contact
