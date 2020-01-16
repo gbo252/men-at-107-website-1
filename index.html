@@ -146,16 +146,18 @@
 		</main>
 
 		<script>
-			const instaEndpoint =
-				"https://api.instagram.com/v1/users/self/media/recent/?access_token=9063853347.f61647e.c75a313ba6844cd78eb2ef414102923a";
-			const slideshow = document.querySelector("#slideshowImages");
+			// babel converted
+			"use strict";
 
-			const xhr = new XMLHttpRequest();
+			var instaEndpoint =
+				"https://api.instagram.com/v1/users/self/media/recent/?access_token=9063853347.f61647e.c75a313ba6844cd78eb2ef414102923a";
+			var slideshow = document.querySelector("#slideshowImages");
+			var xhr = new XMLHttpRequest();
 
 			xhr.onreadystatechange = function() {
 				if (xhr.readyState === XMLHttpRequest.DONE) {
-          for (let i = 0; i < 30; i++) {
-						const image = document.createElement("IMG");
+					for (var i = 0; i < 30; i++) {
+						var image = document.createElement("IMG");
 						image.classList.add("instaPics");
 						image.src =
 							xhr.response.data[
@@ -166,9 +168,33 @@
 				}
 			};
 
-      xhr.open("GET", instaEndpoint);
+			xhr.open("GET", instaEndpoint);
 			xhr.responseType = "json";
 			xhr.send();
+
+			// const instaEndpoint =
+			// 	"https://api.instagram.com/v1/users/self/media/recent/?access_token=9063853347.f61647e.c75a313ba6844cd78eb2ef414102923a";
+			// const slideshow = document.querySelector("#slideshowImages");
+
+			// const xhr = new XMLHttpRequest();
+
+			// xhr.onreadystatechange = function() {
+			// 	if (xhr.readyState === XMLHttpRequest.DONE) {
+			// 		for (let i = 0; i < 30; i++) {
+			// 			const image = document.createElement("IMG");
+			// 			image.classList.add("instaPics");
+			// 			image.src =
+			// 				xhr.response.data[
+			// 					i < 20 ? i : i - 20
+			// 				].images.standard_resolution.url;
+			// 			slideshow.appendChild(image);
+			// 		}
+			// 	}
+			// };
+
+			// xhr.open("GET", instaEndpoint);
+			// xhr.responseType = "json";
+			// xhr.send();
 		</script>
 	</body>
 </html>
