@@ -1,8 +1,3 @@
-"use strict";
-
-//babel conversion used
-
-// context object, containing the products array of each individual product object
 var context = {
 	products: [
 		{
@@ -290,7 +285,7 @@ function centerScreen(i) {
 			info[i].style.marginTop = "0px";
 		}
 	}
-};
+}
 
 var _loop = function _loop(i) {
 	square[i].onclick = function() {
