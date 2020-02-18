@@ -1,120 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-134517806-1"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134517806-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+			gtag("config", "UA-134517806-1");
+		</script>
+		<meta charset="utf-8" />
+		<link href="./css/reset.css" type="text/css" rel="stylesheet" />
+		<link href="./css/style.css" type="text/css" rel="stylesheet" />
+		<link href="./css/products.css" type="text/css" rel="stylesheet" />
+		<link rel="shortcut icon" href="images/Logo.png" type="image/png" />
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="/apple-touch-icon-120x120-precomposed.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="/apple-touch-icon-152x152-precomposed.png"
+		/>
+		<link rel="canonical" href="https://www.menat107.co.uk/products" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1"
+		/>
+		<meta
+			name="description"
+			content="A selection of our gifts include bags, wallets, washbags, phone, tablet and laptop cases, scarves, gloves, hats, socks, underwear, ties, belts, clocks, lights, grooming, games and many more tools and gadgets!"
+		/>
+		<meta
+			name="keywords"
+			content="Mens Gifts,Gifts,Men,Gift,Gifts for Him,Gifts for Men,Muswell Hill,London,Gift Shop,Gift Store,Gift Ideas,Mens Gift Ideas,Mens Accessories,Mens Fashion,Mens Style"
+		/>
+		<title>Men @ 107 | Products | Men's Gifts</title>
 
-    gtag('config', 'UA-134517806-1');
-  </script>
-  <meta charset="utf-8" />
-  <link href="./css/reset.css" type="text/css" rel="stylesheet">
-  <link href="./css/style.css" type="text/css" rel="stylesheet">
-  <link href="./css/products.css" type="text/css" rel="stylesheet">
-  <link rel="shortcut icon" href="images/Logo.png" type="image/png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120-precomposed.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png" />
-  <link rel="canonical" href="https://www.menat107.co.uk/products" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description"
-    content="A selection of our gifts include bags, wallets, washbags, phone, tablet and laptop cases, scarves, gloves, hats, socks, underwear, ties, belts, clocks, lights, grooming, games and many more tools and gadgets!">
-  <meta name="keywords"
-    content="Mens Gifts,Gifts,Men,Gift,Gifts for Him,Gifts for Men,Muswell Hill,London,Gift Shop,Gift Store,Gift Ideas,Mens Gift Ideas,Mens Accessories,Mens Fashion,Mens Style">
-  <title>Men @ 107 | Products | Men's Gifts</title>
+		<!-- Handlebars CDN -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
 
-  <!-- Handlebars CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+		<!-- Handlebars section for Product Square -->
+		<script id="productSquareHB" type="text/x-handlebars-template">
+			{{#each products}}
+			  <div class="productSquare">
+			    <div class="productHeading"><h2>{{{this.squareName}}}</h2></div>
+			    <div class="productFrontImage"><img class="imageBorder" src="images/ProductSquares/{{this.squarePic}}" alt="{{this.squareAlt}}"></div>
+			  </div>
+			{{/each}}
+		</script>
 
-  <!-- Handlebars section for Product Square -->
-  <script id="productSquareHB" type="text/x-handlebars-template">
-    {{#each products}}
-      <div class="productSquare">
-        <div class="productHeading"><h2>{{{this.squareName}}}</h2></div>
-        <div class="productFrontImage"><img class="imageBorder" src="images/ProductSquares/{{this.squarePic}}" alt="{{this.squareAlt}}"></div>
-      </div>
-    {{/each}}
-  </script>
+		<!-- Handlebars section for Product Info -->
+		<script id="productInfoHB" type="text/x-handlebars-template">
+			{{#each products}}
+			  <div class="productInfo">
+			    <img class="closeButton" src="images/cross.png" alt="Close button">
+			    <div class="productText">
+			      <h2>{{this.infoName}}</h2>
+			      <p>{{this.infoText}}</p>
+			    </div>
+			    <div class="productImageGroup">
+			      {{#if this.infoPic3}}
+			        <div class="productImage"><img class="imageBorder" src="images/ProductSquares/{{this.infoPic1}}" alt="{{this.infoAlt1}}"></div>
+			        <div class="productImage"><img class="imageBorder" src="images/ProductSquares/{{this.infoPic2}}" alt="{{this.infoAlt2}}"></div>
+			        <div class="productImage"><img class="imageBorder" src="images/ProductSquares/{{this.infoPic3}}" alt="{{this.infoAlt3}}"></div>
+			      {{else if this.infoPic2}}
+			        <div class="productImage"><img class="imageBorder" src="images/ProductSquares/{{this.infoPic1}}" alt="{{this.infoAlt1}}"></div>
+			        <div class="productImage"><img class="imageBorder" src="images/ProductSquares/{{this.infoPic2}}" alt="{{this.infoAlt2}}"></div>
+			      {{else}}
+			        <div class="productImage"><img class="imageBorder" src="images/ProductSquares/{{this.infoPic1}}" alt="{{this.infoAlt1}}"></div>
+			      {{/if}}
+			    </div>
+			  </div>
+			{{/each}}
+		</script>
+	</head>
 
-  <!-- Handlebars section for Product Info -->
-  <script id="productInfoHB" type="text/x-handlebars-template">
-    {{#each products}}
-      <div class="productInfo">
-        <img class="closeButton" src="images/cross.png" alt="Close button">
-        <div class="productText">
-          <h2>{{this.infoName}}</h2>
-          <p>{{this.infoText}}</p>
-        </div>
-        <div class="productImageGroup">
-          {{#if this.infoPic3}}
-            <div class="productImage"><img class="imageBorder" src="images/ProductSquares/{{this.infoPic1}}" alt="{{this.infoAlt1}}"></div>
-            <div class="productImage"><img class="imageBorder" src="images/ProductSquares/{{this.infoPic2}}" alt="{{this.infoAlt2}}"></div>
-            <div class="productImage"><img class="imageBorder" src="images/ProductSquares/{{this.infoPic3}}" alt="{{this.infoAlt3}}"></div>
-          {{else if this.infoPic2}}
-            <div class="productImage"><img class="imageBorder" src="images/ProductSquares/{{this.infoPic1}}" alt="{{this.infoAlt1}}"></div>
-            <div class="productImage"><img class="imageBorder" src="images/ProductSquares/{{this.infoPic2}}" alt="{{this.infoAlt2}}"></div>
-          {{else}}
-            <div class="productImage"><img class="imageBorder" src="images/ProductSquares/{{this.infoPic1}}" alt="{{this.infoAlt1}}"></div>
-          {{/if}}
-        </div>
-      </div>
-    {{/each}}
-  </script>
+	<body id="productsBody">
+		<header>
+			<label for="toggle">
+				<div id="navButton">
+					<div id="navButtonBorder">
+						<hr />
+						<hr />
+						<hr />
+					</div>
+				</div>
+			</label>
 
-</head>
+			<input id="toggle" type="checkbox" />
 
-<body id="productsBody">
-  <header>
-    <label for="toggle">
-      <div id="navButton">
-        <div id="navButtonBorder">
-          <hr />
-          <hr />
-          <hr />
-        </div>
-      </div>
-    </label>
+			<nav>
+				<p><a href="./index.html">HOME</a></p>
+				<p><a href="./about.html">OUR STORY</a></p>
+				<p id="current"><a href="./products.html">PRODUCTS</a></p>
+				<p><a href="./contact.html">CONTACT US</a></p>
+			</nav>
 
-    <input id="toggle" type="checkbox">
+			<div id="socials">
+				<a href="https://www.instagram.com/menat107/" target="_blank"
+					><img
+						class="socialLogo"
+						src="images/instagram.png"
+						alt="Instagram Logo"
+				/></a>
 
-    <nav>
-      <p><a href="./index.html">HOME</a></p>
-      <p><a href="./about.html">OUR STORY</a></p>
-      <p id="current"><a href="./products.html">PRODUCTS</a></p>
-      <p><a href="./contact.html">CONTACT US</a></p>
-    </nav>
+				<a
+					href="https://www.linkedin.com/company/menat107/"
+					target="_blank"
+					><img
+						class="socialLogo"
+						src="images/linkedin.png"
+						alt="LinkedIn Logo"
+				/></a>
 
-    <div id="socials">
-      <a href="https://www.instagram.com/menat107/" target="_blank"><img class="socialLogo" src="images/instagram.png"
-          alt="Instagram Logo"></a>
-      <a href="https://www.linkedin.com/company/menat107/" target="_blank"><img class="socialLogo"
-          src="images/linkedin.png" alt="LinkedIn Logo"></a>
-      <a href="https://www.facebook.com/menat107/" target="_blank"><img class="socialLogo" src="images/facebook.png"
-          alt="Facebook Logo"></a>
-    </div>
+				<a href="https://www.facebook.com/menat107/" target="_blank"
+					><img
+						class="socialLogo"
+						src="images/facebook.png"
+						alt="Facebook Logo"
+				/></a>
+			</div>
 
-    <div id="mainTitle">
-      <h1>PRODUCTS</h1>
-      <hr id="mainTitleLine" />
-    </div>
-  </header>
+			<div id="mainTitle">
+				<h1>PRODUCTS</h1>
+				<hr id="mainTitleLine" />
+			</div>
+		</header>
 
-  <main id="fullPageContainer">
-    <div id="pageGradient"></div>
+		<main id="fullPageContainer">
+			<div id="pageGradient"></div>
 
-    <div id="overlay">
-      <div id="overlay2"></div>
-    </div>
+			<div id="overlay">
+				<div id="overlay2"></div>
+			</div>
 
-    <div id="productsPageMain"></div>
-  </main>
+			<div id="productsPageMain"></div>
+		</main>
 
-  <footer id="productsFooter"><img src="images/Logo.png" alt="Men @ 107 Logo"></footer>
-</body>
+		<footer id="productsFooter">
+			<img src="images/Logo.png" alt="Men @ 107 Logo" />
+		</footer>
 
-<script type="text/javascript" src="./products.js"></script>
-
+		<script type="text/javascript" src="./productsObject.js"></script>
+		<script type="text/javascript" src="./products.js"></script>
+	</body>
 </html>
