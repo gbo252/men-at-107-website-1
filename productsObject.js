@@ -29,16 +29,18 @@ var context = {
 				"Come and discover how many accessories the British brand Barbour has to offer. The Barbour story began in 1894 and remains true to its core values today, offering beautiful function and well priced stylish accessories. These include scarves, gloves, hats, backpacks, laptop and cross-body bags, wallets and card holders, belts, handkerchiefs, hip and thermos flasks, travel mugs, umbrellas and shoe cleaning sets."
 		},
 		{
-			squareName: "Leather<br/>Jackets",
-			infoName: "Leather Jackets",
-			squarePic: "Jackets-Rack.jpg",
-			squareAlt: "Leather jackets on clothes rack",
-			infoPic1: "Jackets-Rack.jpg",
-			infoAlt1: "Leather jackets on clothes rack",
-			infoPic2: "Jackets-Plant.jpg",
-			infoAlt2: "Black leather jacket hanging in front of plant",
+			squareName: "Speakers",
+			infoName: "Speakers",
+			squarePic: "Speakers-MiSquare.jpg",
+			squareAlt: "Ginkgo Mi Square mini speaker",
+			infoPic1: "Speakers-Selfie.jpg",
+			infoAlt1: "Ginkgo mini selfie speaker",
+			infoPic2: "Speakers-MiSquare.jpg",
+			infoAlt2: "Ginkgo Mi Square mini speaker",
+			infoPic3: "Speakers-MiniHalo.jpg",
+			infoAlt3: "Ginkgo Mini Halo speaker",
 			infoText:
-				"Soft leather jackets are now available at Men @ 107. Colours include black, brown, navy and cognac leathers. Our men’s leather jackets are ideal as a jacket or short coat for smart to casual outings. With so much potential wear, our jackets are designed with durability and style in mind. Fit and functionality are crafted into every leather jacket and are available in sizes small, medium, large, extra large and XXL."
+				"1st picture is the Tumbler Selfie Bluetooth Speaker, which will play your favourite tunes with a powerful sound alongside featuring a hands-free selfie function to capture any moment, anytime, anywhere. 2nd picture is the MI Square Bluetooth Speaker, great for travel and the outside, and for a compact speaker, delivers a superb quality. 3rd picture is the Mini Halo One, perfect for listening in and around your home, giving you a fantastic listening experience. Built with TWS technology, enabling you to pair two Mini Halo One's for a great stereo sound."
 		},
 		{
 			squareName: "Briefcases,<br/>Holdalls<br/>& Suit-Packs",
@@ -55,6 +57,20 @@ var context = {
 				"Whether you work in the city or the suburbs, our briefcase selection is perfect for every eventuality. Our leather holdalls are produced to the highest quality whilst the canvas and leather combo is a sure winner for a younger and more casual feel. Suit-Packs are available on wheels and in a beautiful soft leather for an overnight visit, making this is a fantastic ‘forever’ gift."
 		},
 		{
+			squareName: "Cufflinks, Bracelets<br/>& Sunglasses",
+			infoName: "Cufflinks, Bracelets & Sunglasses",
+			squarePic: "Cufflinks-Cufflinks.jpg",
+			squareAlt: "Fox & Chave cufflinks",
+			infoPic1: "Cufflinks-Cufflinks.jpg",
+			infoAlt1: "Fox & Chave cufflinks",
+			infoPic2: "Cufflinks-Sunglasses.jpg",
+			infoAlt2: "Two pairs of sunglasses",
+			infoPic3: "Cufflinks-Bracelet.jpg",
+			infoAlt3: "Man's hand wearing Boing bracelet",
+			infoText:
+				"Many of our cufflinks are inspired by the Arts, History and Culture. Our bracelets are made from genuine climbing and sailing ropes or in woven leather with strong magnet clasps, and our sunglasses offer 100% UV protection in many styles and colours."
+		},
+		{
 			squareName: "Card Holders<br/>& Wallets",
 			infoName: "Card Holders & Wallets",
 			squarePic: "Wallets-Secrid.jpg",
@@ -66,7 +82,7 @@ var context = {
 			infoPic3: "Wallets-Wallet.jpg",
 			infoAlt3: "Brown leather wallet",
 			infoText:
-				"We offer a large range of card holders and wallets in many leathers, colours and prices. Our vast selection enables us to cater to your specific needs and the majority of these are RFID blocking for your protection. We have also introduced Secrid card and money holders, as a new era of technology calls for a new type of wallet. Secrid, made in Holland, protects your cards alongside your privacy and includes a mechanism to display all your cards at the touch of a button."
+				"We offer a large range of card holders and wallets in many leathers, colours and prices. Our vast selection enables us to cater to your specific needs and the majority of these have RFID blocking for your protection. We have also introduced Secrid card and money holders, as a new era of technology calls for a new type of wallet. Secrid, made in Holland, protects your cards alongside your privacy and includes a mechanism to display all your cards at the touch of a button."
 		},
 		{
 			squareName: "Key Holders,<br/>Key Cases<br/>& Coin Purses",
@@ -80,7 +96,19 @@ var context = {
 			infoPic3: "KeyCoin-Coin.jpg",
 			infoAlt3: "Two leather coin purses",
 			infoText:
-				"Key rings made by Artisan craftsman and a selection of leather key cases and coin purses avoid the frustration we all have with noisy pockets and cluttered bags. A modern alternative to the key case is Orbitkey, offering a clever new solution for looking after your keys which is pocket friendly. This silent stack holds between 2-7 keys, or Orbitkey accessories such as the USB drive, in a slim leather or rubber casing."
+				"Key rings made by Artisan craftsman and a selection of leather key cases and coin purses avoid the frustration we all have with noisy pockets and cluttered bags. A modern alternative to the key case is Orbitkey, offering a clever new solution for looking after your keys which is pocket friendly. This silent stack holds between 2-7 keys or Orbitkey accessories such as the USB drive, in a slim leather or rubber casing. Trackers are also available to track your keys and prevent them getting lost."
+		},
+		{
+			squareName: "Leather<br/>Jackets",
+			infoName: "Leather Jackets",
+			squarePic: "Jackets-Rack.jpg",
+			squareAlt: "Leather jackets on clothes rack",
+			infoPic1: "Jackets-Rack.jpg",
+			infoAlt1: "Leather jackets on clothes rack",
+			infoPic2: "Jackets-Plant.jpg",
+			infoAlt2: "Black leather jacket hanging in front of plant",
+			infoText:
+				"Soft leather jackets are now available at Men @ 107. Colours include black, brown, navy and cognac leathers. Our men’s leather jackets are ideal as a jacket or short coat for smart to casual outings. With so much potential wear, our jackets are designed with durability and style in mind. Fit and functionality are crafted into every leather jacket and are available in sizes small, medium, large, extra large and XXL."
 		},
 		{
 			squareName: "Travel Wallets<br/>& Washbags",
@@ -120,7 +148,7 @@ var context = {
 			infoPic3: "Winter-Hat.jpg",
 			infoAlt3: "Blue hat",
 			infoText:
-				"Our scarf ranges include stripes, dots and checks in unusual colour combinations and materials. They feel exceptionally soft and many are double-sided, creating both unusual and versatile combinations to wear with many outfits. Gloves are made from soft leather, suedes and fabrics in black, brown, tan and navy, all available in four sizes. Caps are made in Harris Tweed and a selection of other fabrics, in multiple colours and sizes. We also have beanies and caps in various colours, together with some great ‘headwear’ including 100% wool felt trilby and pork pie hats and a large variety of caps in an assortment of materials and colours."
+				"Our scarf ranges include stripes, dots and checks in unusual colour combinations and materials. They are exceptionally soft and many are double-sided, creating both unusual and versatile combinations. The gloves are made from soft leathers and suedes in black, brown, tan and navy - all available in four sizes. We offer caps in a selection of fabrics, for all seasons, colours and sizes. We also sell beanies, 100% wool felt trilby and pork pie hats, and offer a variety of stylish straw hats for spring/summer in many great colours."
 		},
 		{
 			squareName: "Socks",
@@ -138,9 +166,9 @@ var context = {
 			squareName: "Ties, Bow-Ties,<br/>Hankies & Belts",
 			infoName: "Ties, Bow-Ties, Hankies & Belts",
 			squarePic: "ClothingAcc-Belts.jpg",
-			squareAlt: "Three brown leather belts",
+			squareAlt: "Three leather belts",
 			infoPic1: "ClothingAcc-Belts.jpg",
-			infoAlt1: "Three brown leather belts",
+			infoAlt1: "Three leather belts",
 			infoPic2: "ClothingAcc-Ties.jpg",
 			infoAlt2:
 				"Bow-Tie and tie, next to cocktail shaker and glass of whisky",
@@ -184,36 +212,10 @@ var context = {
 			squareAlt: "Three small bottles of beard oil",
 			infoPic1: "Grooming-Oil.jpg",
 			infoAlt1: "Three small bottles of beard oil",
-			infoPic2: "Grooming-Nail.jpg",
-			infoAlt2: "Ted baker nail scissor set",
+			infoPic2: "Grooming-Manicure.jpg",
+			infoAlt2: "Barbour nail scissor set",
 			infoText:
-				"Our beard oil is handcrafted in London and uses 100% natural ingredients. There are three essences to nourish, hydrate and condition your beard. Eastern Spice, Orchard Haze and Citrus Blend have argan and olive oils which are packed with nutrients that care for both your beard and skin. Ted Baker grooming products include manicure sets, shaving and skincare products and colognes, authentically crafted to recreate the master barber experience at home."
-		},
-		{
-			squareName: "Game Sets",
-			infoName: "Game Sets",
-			squarePic: "Games-Chess.jpg",
-			squareAlt: "Leather chess board and case",
-			infoPic1: "Games-Chess.jpg",
-			infoAlt1: "Leather chess board and case",
-			infoPic2: "Games-Backgammon.jpg",
-			infoAlt2: "Leather backgammon set",
-			infoText:
-				"Hand-made game sets, in exquisite quality leather cases. The chess metal pieces are beautifully engineered whilst the backgammon board is hand-cut and sewn with wooden counters and dice. Both crafted in antique tan leather."
-		},
-		{
-			squareName: "Pens, Tools<br/>& Gadgets",
-			infoName: "Pens, Tools & Gadgets",
-			squarePic: "Tools-GiftBoxes.jpg",
-			squareAlt:
-				"Four gift tool boxes, including bicycle puncture repair kit",
-			infoPic1: "Tools-GiftBoxes.jpg",
-			infoAlt1:
-				"Four gift tool boxes, including bicycle puncture repair kit",
-			infoPic2: "Tools-Pens.jpg",
-			infoAlt2: "Pen set - two pens in a box",
-			infoText:
-				"A selection of new bold designs from Gentlemen’s Hardware tools and gadgets collection. These include various multi-tool kits, pen knives, key holders with flashlights, survival kits and a bicycle multi-tool kit, gifts for men in all walks of life. Our Swiss-made ball point and roller ball pens are all solid brass using the highest quality plating. These come boxed in pairs or can be sold singularly."
+				"Our beard oil is handcrafted in London and uses 100% natural ingredients. There are three essences to nourish, hydrate and condition your beard. Eastern Spice, Orchard Haze and Citrus Blend have argan and olive oils which are packed with nutrients that care for both your beard and skin. Our latest grooming product is a concentrated wax-based fragrance in a small tin, perfect for those of us who love to smell good and moisturise your skin whilst on the move. Ideal for travelling or using at home, the Barbour manicure set comes in a tartan zip round case containing high quality stainless steel tools."
 		},
 		{
 			squareName: "Ethical<br/>Products",
