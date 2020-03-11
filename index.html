@@ -147,7 +147,7 @@
 
 		<script>
 			var instaEndpoint =
-				"https://api.instagram.com/v1/users/self/media/recent/?access_token=9063853347.f61647e.c75a313ba6844cd78eb2ef414102923a";
+				"https://graph.instagram.com/me/media?fields=media_url&access_token=IGQVJWclJjZAS13NUp3cDEzTmxSUDgxLXZAEWDJKUmxNN1JDOWM4bDRDd0ZABVkFDVnY2d3VWWUlneVBKQnVVSThQVHFBRDVwV052TmpEdzNRWUk2RjRkbWJDTFlpckxoSzQybmpiV3d1U3FiYXlYOTkxegZDZD";
 			var slideshow = document.querySelector("#slideshowImages");
 			var xhr = new XMLHttpRequest();
 
@@ -160,7 +160,7 @@
 						image.src =
 							res.data[
 								i < 20 ? i : i - 20
-							].images.standard_resolution.url;
+							].media_url;
 						image.alt = "";
 						slideshow.appendChild(image);
 					}
