@@ -141,29 +141,31 @@
       </div>
     </main>
 
-    <script>
-      var instaEndpoint =
-        'https://api.instagram.com/v1/users/self/media/recent/?access_token=9063853347.f61647e.c75a313ba6844cd78eb2ef414102923a';
-      var slideshow = document.querySelector('#slideshowImages');
-      var xhr = new XMLHttpRequest();
+		<script>
+			var instaEndpoint =
+				"https://graph.instagram.com/me/media?fields=media_url&access_token=IGQVJYdGJZAZAHRyUE1senJ2dFBaY2JoalhFZAFB5bVgzS1FmR3dlNEE5ZAkxRRWR3c3F0QVNtNUkxcEs2eVF4dHpaa2tadmZASRUlwTHNsSGpEdlhrWlcycFV4N1B6LThiWXFtTG9QTHlneUxMLVBib0Q5UgZDZD";
+			var slideshow = document.querySelector("#slideshowImages");
+			var xhr = new XMLHttpRequest();
 
-      xhr.onreadystatechange = function() {
-        if (xhr.readyState === XMLHttpRequest.DONE) {
-          var res = JSON.parse(xhr.responseText);
-          for (var i = 0; i < 30; i++) {
-            var image = document.createElement('IMG');
-            image.classList.add('instaPics');
-            image.src =
-              res.data[i < 20 ? i : i - 20].images.standard_resolution.url;
-            image.alt = '';
-            slideshow.appendChild(image);
-          }
-        }
-      };
+			xhr.onreadystatechange = function() {
+				if (xhr.readyState === XMLHttpRequest.DONE) {
+					var res = JSON.parse(xhr.responseText);
+					for (var i = 0; i < 30; i++) {
+						var image = document.createElement("IMG");
+						image.classList.add("instaPics");
+						image.src =
+							res.data[
+								i < 20 ? i : i - 20
+							].media_url;
+						image.alt = "";
+						slideshow.appendChild(image);
+					}
+				}
+			};
 
       xhr.open('GET', instaEndpoint);
       xhr.send();
-
+      
       // var setTopMargin = function() {
       //   var messageHeight = document.querySelector('#top-message').offsetHeight;
       //   document.querySelector('header').style.top = messageHeight + 'px';
