@@ -85,13 +85,13 @@
       </div>
     </header>
 
-    <div
+    <!-- <div
       id="top-message"
       style="display: flex; justify-content: center; align-items: center; padding: 10px; background-color: white; color: red; font-weight: 700;"
     >
       WE APOLOGISE FOR ANY INCONVENIENCE, BUT DUE TO THE CORONAVIRUS WE ARE
       CLOSED TEMPORARILY, PLEASE EMAIL US IF YOU NEED ANYTHING
-    </div>
+    </div> -->
 
     <main id="fullPageContainer">
       <div id="pageGradientHome"></div>
@@ -164,14 +164,14 @@
       xhr.open('GET', instaEndpoint);
       xhr.send();
 
-      var setTopMargin = function() {
-        var messageHeight = document.querySelector('#top-message').offsetHeight;
-        document.querySelector('header').style.top = messageHeight + 'px';
-      };
+      // var setTopMargin = function() {
+      //   var messageHeight = document.querySelector('#top-message').offsetHeight;
+      //   document.querySelector('header').style.top = messageHeight + 'px';
+      // };
 
-      setTopMargin();
+      // setTopMargin();
 
-      window.addEventListener('resize', setTopMargin);
+      // window.addEventListener('resize', setTopMargin);
     </script>
   </body>
 </html>
